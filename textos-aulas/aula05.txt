@@ -6,3 +6,5 @@ ng g m [nome do módulo] - cria um novo módulo
 ng g c [mesmo nome do módulo] - cria um novo componente dentro do módulo.
 
 ng g c cursos/curso-detalhe - Criou um componente dentro do diretório de cursos
+
+Um componente criado não tem o arquivo module.ts já um módulo tem.
