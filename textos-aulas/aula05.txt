@@ -1,0 +1,8 @@
+Módulos servem para organizar os componentes. Pode expor o que você deseja para aplicação.
+
+ng g m [nome do módulo] - cria um novo módulo
+ m de módulo
+
+ng g c [mesmo nome do módulo] - cria um novo componente dentro do módulo.
+
+ng g c cursos/curso-detalhe - Criou um componente dentro do diretório de cursos
