@@ -12,6 +12,7 @@ import { Component } from "@angular/core";
     selector: 'meu-primeiro-component',
     // Com crase vira uma string gigante
     // É o que vai sair na tela
+    // É indicado usar a tag aqui somente até 3 linhas
     template: `
         <p>Meu primeiro component com Angular 2!</p>
     `
