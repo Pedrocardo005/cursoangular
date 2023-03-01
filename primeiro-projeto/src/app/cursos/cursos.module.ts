@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CursosComponent } from './cursos.component';
 import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
+import { CursosService } from './cursos.service';
 
 
 
@@ -19,6 +20,8 @@ import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
   // Diz quais são as coisas a serem expostas
   exports: [
     CursosComponent
-  ]
+  ],
+  // Necessário para injeção de dependências
+  providers: [ CursosService ]
 })
 export class CursosModule { }

@@ -1,0 +1,3 @@
+ Colocamos as coisas que fazem a comunicação com o back em serviços.
+
+ ng g s [nome do serviço] - Cria serviços
