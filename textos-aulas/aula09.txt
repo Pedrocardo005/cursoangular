@@ -1,0 +1,12 @@
+ Data binding é a comunicação do componente com o template.
+ Há quatro formas de fazer o data binding.
+
+ 1º Interpolação é uma forma de associar informações do componente com o template. Usa {{ valor }}
+ 
+ 2º property binding onde conseguimos ter saída do componente para o template.
+
+ 3º Pelo evento.
+
+ Podemos usar métodos para retornar coisas no template, escutar eventos no componente.
+
+ 4º twoway databinding quando template e componente se comunicam ao mesmo tempo.

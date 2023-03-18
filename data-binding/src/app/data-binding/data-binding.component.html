@@ -1,0 +1,20 @@
+<section class="property-binding">
+    <article>
+        <h3>Inerpolation / Interpolação</h3>
+        <p>String renderizada com interpolação: {{ url }}</p>
+        <!-- Consegue resolver expressões na interpolação -->
+        <p>Resultade de 1 + 1 é {{ 1 + 1 }}</p>
+        <p>Resultade de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+        <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+    </article>
+
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{ urlImagem }}">
+        <!-- Quando passa com colchetes, não precisa das chaves. -->
+        <!-- É um sintax sugar, maneira mais amigável. -->
+        <img [src]="urlImagem">
+        <!-- Por baixo dos panos o angular faz isso, mas o que fica melhor é o de cima. -->
+        <img bind-src="urlImagem">
+    </article>
+</section>
