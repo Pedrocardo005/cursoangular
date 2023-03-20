@@ -16,13 +16,13 @@
         <img [src]="urlImagem">
         <!-- Por baixo dos panos o angular faz isso, mas o que fica melhor é o de cima. 
         <img bind-src="urlImagem">
-    </article> -->
+    </article> 
 
     <article>
         <h3>Class e Style Binding</h3>
         <div>
             Selecione uma classe:
-            <!-- # Cria uma variável e o change pega o evento change. -->
+            <!-- # Cria uma variável e o change pega o evento change. 
             <select #classe (change)="0">
                 <option value="alert-success">Sucesso</option>
                 <option value="alert-info">Info</option>
@@ -35,7 +35,7 @@
                 Texto colorido conforme valor do combobox.
             </div>
             <!-- Da variável classe, criada lá em cima no select, verifique se o valor dela é 
-            alert-success -->
+            alert-success
             <div class="alert" role="alert"
                 [class.alert-success]="classe.value == 'alert-success'">
                 Sucesso
@@ -57,6 +57,37 @@
                 [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
                 Esse texto somente aparece em caso de erro.
             </div>
+        </div>
+    </article> -->
+
+    <article>
+        <h3>Event binding</h3>
+        <div>
+            <button (click)="botaoClicado()"
+            class="btn btn-primary">
+                Me clique!
+            </button>
+
+            <br><br>
+
+            <!-- Para fazer referência ao evento, utiliza-se o dólar -->
+            <input type="text" 
+            (keyup)="onKeyUp($event)"
+            (keyup.enter)="salvarValor(campoInput.value)"
+            (blur)="salvarValor(campoInput.value)"
+            #campoInput />
+            <!-- keyup.enter pega ao dar o enter -->
+
+            <p>Valor atual: {{ valorAtual }}</p>
+            <p>Valor salvo: {{ valorSalvo }}</p>
+
+            <br>
+            <span
+                (mouseover)="onMouseOverOut()"
+                (mouseout)="onMouseOverOut()"
+                [class.highlight]="isMouseOver"
+                >
+                Passe o mouse sobre mim</span>
         </div>
     </article>
 </section>
