@@ -1,0 +1,4 @@
+ Ela deu opção de usar o bootstrap com CDN.
+
+ npm install ng2-bootstrap bootstrap --save - instalou o bootstrap mais atual, o 5.
+ Adicionamos umas coisas no angular.json
