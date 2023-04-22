@@ -1,0 +1,36 @@
+<section class="two-way-databinding">
+    <article>
+        <h3>Two-way data binding</h3>
+        <div>
+            <!-- Evento input ocorre quando o campo é atualizado -->
+            <!-- Ao usar o (input) pega qualquer mudança e aplica aquilo -->
+            <!-- Não está funcionando corretamente -->
+            <!-- <input type="text"
+
+                [value]="nome"
+                (input)="nome = string($event.target.value)"
+            /> -->
+            <!-- (event) Acontece quando o input é modificado -->
+            <!-- Não consegui fazer apenas colchetes, então usei a sintaxe igual a de baixo. -->
+            <input type="text"
+                [(ngModel)]="nome"
+                (ngModelChange)="nome"
+            />
+
+            <!-- Com a sintaxe banana in the box, ela coloca automaticamente o valor no model -->
+            <input type="text" [(ngModel)]="nome" />
+
+            <!-- Mesmo resultado que o de cima -->
+            <input type="text" bindon-ngModel="nome" />
+
+            <p>Você digitou: {{ nome }}</p>
+
+        </div>
+
+        <div>
+            <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade.</p>
+            <input type="text" [(ngModel)]="pessoa.nome">
+            <input type="text" [(ngModel)]="pessoa.idade">
+        </div>
+    </article>
+</section>
