@@ -99,5 +99,9 @@
         <h3>Input/Output Properties</h3>
 
         <app-curso [nome]="nomeDoCurso"></app-curso>
+
+        <!-- Variável valor com decorator input irá ter o valor 10 -->
+        <contador [valor]="10"
+            (mudouValor)="onMudouValor($event)"></contador>
     </article>
 </section>

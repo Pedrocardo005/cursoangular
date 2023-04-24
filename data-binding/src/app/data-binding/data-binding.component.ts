@@ -58,4 +58,8 @@ export class DataBindingComponent {
   onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
   }
+
+  onMudouValor(evento: any){
+    console.log(evento.novoValor);
+  }
 }
