@@ -1,0 +1,1 @@
+ Deu uma porrada de eventos que ocorrem do componente.
