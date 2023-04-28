@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'contador',
@@ -16,14 +16,18 @@ export class OutputPropertyComponent {
   // O decorator faz com que o evento possa ser exposto
   @Output() mudouValor = new EventEmitter();
 
-  incrementa(){
-    this.valor++;
+  // Associa a variável do template e do input
+  @ViewChild('campoInput')
+  campoValorInput!: ElementRef;
+
+  incrementa(){    
+    this.campoValorInput.nativeElement.value++;
     // Dispara o evento e passa um valor
     this.mudouValor.emit({novoValor: this.valor});
   }
 
   decrementa(){
-    this.valor--;
+    this.campoValorInput.nativeElement.value--;
     this.mudouValor.emit({novoValor: this.valor});
   }
 
