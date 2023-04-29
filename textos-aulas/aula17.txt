@@ -1,0 +1,18 @@
+ npm install -g angular-cli - instala o angular
+
+ Veja a documentação do angular-cli para aprender mais.
+
+ ng new [nomedoprojetocamelcase] - cria um novo projeto. O nome segue a mesma 
+ regra de quando vai criar uma variável no javascript. SQN. Não funcionou o nome 
+ "_04_diretivas".
+
+ Você também pode criar uma pasta antes e depois criar a estrutura do angular dentro dela, 
+ para fazer isso são os seguintes passos:
+ 
+ mkdir NomeProjeto
+
+ cd NomeProjeto
+
+ ng init
+
+ ng serve
