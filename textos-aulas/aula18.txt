@@ -1,0 +1,9 @@
+ ng generate component meu-primeiro - forma completa de criar um componente
+ ng g component meu-primeiro - forma menor de criar um componente.
+
+ ng g service diretorioComponente/nome-servico - Cria um serviço com o nome especificado, 
+ foi criado com o mesmo nome do componente
+
+ Mostrou um monte de itens no lugar do componente que podem ser criados, como se cada coisa 
+ fosse uma classe, o service é uma classe, o enum é uma classe.
+ 
