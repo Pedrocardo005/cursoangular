@@ -1,0 +1,6 @@
+ ng new meu-projeto --style=sass - Acho que seja insignificante porque na hora que cria
+ já pergunta qual tipo de estilo irá no projeto.
+
+ ng set defaults.styleExt scss - muda o tipo de estilização do projeto, mas eu tentei e não consegui.
+
+ Só consegui alterando o angular.json.
