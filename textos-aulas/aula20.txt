@@ -1,0 +1,3 @@
+ ng lint - vai scanear o código e verificar se o código está limpo, se contém erros. StyleGuide.
+ ng test - executa o testes unitários. Vai usar o jasmine, na documentação do jasmine ensina a testar.
+ ng e2e - os testes de integração, parecem ser os de tela mesmo.
