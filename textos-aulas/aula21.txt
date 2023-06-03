@@ -1,0 +1,19 @@
+ Nessa aula ensina como está estruturado o projeto do angular.
+
+ Angular2+ utiliza o node.
+
+ Já vem com espaço para código de testes unitários. Testes com Karma, jasmine e Protractor.
+
+ Fornece comandos para realizar o build.
+
+ ember-cli o angula-cli utiliza ele por baixo.
+
+ Mostrou uma pasta config relativa a testes mas aqui não veio.
+
+ Pasta public podemos colocar imagens. Mas pra gente não veio.
+
+ Main.ts faz o bootstrap da aplicação.
+
+ No arquivo package.json tem as dependencies e devdependencies. A primeira são as bibliotecas
+ necessárias para rodar o projeto. A segunda é todas as bibliotecas necessárias para executar em 
+ desenvolvimento.
